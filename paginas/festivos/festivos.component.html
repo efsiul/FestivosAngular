@@ -1,0 +1,43 @@
+<h1 class="mt-4">Componente Principal - Festivos</h1>
+
+<router-outlet>
+    <div class="container mt-4">
+        <div class="Obtenerfestivos">
+            <h3>Obtener Festivos</h3>
+            <div class="formFestivos">
+                <div>
+                <label for="yearInput">Año:</label>
+                <input type="number" id="yearInput" [(ngModel)]="_anio" />
+                </div>
+
+                <button class="btnFestivos" (click)="obtenerFestivos()">Obtener Festivos</button>
+            </div>
+
+            <ngx-datatable
+                class="dark"
+                [headerHeight]="30"
+                [footerHeight]="30"
+                [rowHeight]="30"
+                [rows]="festivos"
+                [columns]="columnas"
+                [columnMode]="'force'"
+            ></ngx-datatable>
+        </div>
+        <div class="subcontainer">
+            <div class="Verificarfestivos">
+                <h3>Verificar si es Festivo</h3>
+                <input type="date" [(ngModel)]="_fecha" />
+                <button class="btnFestivos" (click)="verificarFestivo()">Verificar Festivo</button>
+                <p *ngIf="_esFestivo">La fecha es festiva.</p>
+                <p *ngIf="!_esFestivo">La fecha no es festiva.</p>
+            </div>
+            <div class="Verificarfechavalida">
+                <h3>Verificar si es Fecha Válida</h3>
+                <input type="date" [(ngModel)]="_fechaValida" />
+                <button class="btnFestivos" (click)="verificarFechaValida()">Verificar Fecha</button>
+                <p *ngIf="fechaValida">La fecha es válida.</p>
+                <p *ngIf="!fechaValida">La fecha no es válida.</p>
+            </div>
+        </div>
+    </div>
+</router-outlet>

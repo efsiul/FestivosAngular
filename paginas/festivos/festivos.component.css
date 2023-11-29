@@ -1,0 +1,66 @@
+h1 {
+    color: #33A0F3;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+h3 {
+    color: #33A0F3;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: aliceblue;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px;
+    border: 2px solid #33A0F3;
+    border-radius: 10px;
+    background-color: #33A0F3;
+
+}
+.container {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+
+.subcontainer {
+    display: flex; /* Añadido: Utiliza un contenedor flexible */
+    justify-content: space-between; /* Añadido: Distribuye los elementos horizontalmente */
+    flex-wrap: wrap; /* Añadido: Permite que los elementos se envuelvan en una nueva línea si no hay espacio suficiente */
+}
+.formFestivos {
+    justify-content: center;
+    margin: 10px;
+}
+.Obtenerfestivos {
+    text-align: center;
+    margin: 50px;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.Verificarfestivos {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    flex: 1; /* Añadido: Ocupa el espacio disponible */
+}
+
+.Verificarfechavalida {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 20px;
+    flex: 1; /* Añadido: Ocupa el espacio disponible */
+}
+.btnFestivos {
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 5px;
+    margin: 10px;
+    background-color: #33A0F3;
+};
